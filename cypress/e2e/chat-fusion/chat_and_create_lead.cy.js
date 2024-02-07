@@ -50,7 +50,7 @@ describe('Chat and create lead', () => {
     cy.screenshot(`tryhungry-${new Date().getTime()}`)
   })
 
-  it.only('chat with housing chatbot and have response', () => {
+  it('chat with housing chatbot and have response', () => {
     cy.visit('https://chatfusion-demo.contactloop.com/housingexperts')
 
     // get first message
