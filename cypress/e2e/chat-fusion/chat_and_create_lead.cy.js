@@ -47,7 +47,7 @@ describe('Chat and create lead', () => {
     cy.wait('@getResponse', { timeout: 20000 })
     cy.get('.message-wrapper.sent').should('have.length', 5)
 
-    cy.screenshot(`tryhungry-${new Date().getTime()}`)
+    cy.screenshot(`/tryhungry-${new Date().getTime()}`)
   })
 
   it('chat with housing chatbot and have response', () => {
@@ -83,6 +83,6 @@ describe('Chat and create lead', () => {
     cy.wait('@getResponse', { timeout: 20000 })
     cy.get('.message-wrapper.sent').should('have.length', 4)
 
-    cy.screenshot(`housing-${new Date().getTime()}`)
+    cy.screenshot(`/housing-${new Date().getTime()}`)
   })
 })
